@@ -17,10 +17,10 @@ public class InjectUtls {
 
     public static void inject(Activity activity) {
         injectView(activity);
-        InjectonClick(activity);
+        InjectOnClick(activity);
     }
 
-    private static void InjectonClick(Activity activity) {
+    private static void InjectOnClick(Activity activity) {
 
         Class<? extends Activity> aClass = activity.getClass();
         Method[] declaredMethods = aClass.getDeclaredMethods();
