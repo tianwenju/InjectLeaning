@@ -151,6 +151,7 @@ view怎么拿？我们的注解是注解方法的，注解里面有我们需要�
 2. 动态代理View.OnClickListener对象，实现对OnClick事件的重写。
 
 对于不懂动态代理的同学，请参考：
+[动态代理](http://www.cnblogs.com/xiaoluo501395377/p/3383130.html)
 
 ```
   //动态代理实现方式
@@ -271,4 +272,5 @@ m.invoke(target, args)
 InjectProxyOnClick(this);
 ```
 也就是说我们在这个方法中相当于实现了view.SetonClickListener()方法，重写了OnClick（）方法，调用了我们注解的方法。这也就讲完了。
-源码传送
+
+[源码传送](https://github.com/tianwenju/InjectLeaning)
