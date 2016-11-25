@@ -9,7 +9,7 @@ import java.lang.annotation.Target;
  * Created by V.Wenju.Tian on 2016/11/24.
  */
 @Target(ElementType.METHOD)
-@Retention(RetentionPolicy.RUNTIME)
+@Retention(RetentionPolicy.CLASS)
 public @interface MAnnotaion {
 
     String name() default "张三";

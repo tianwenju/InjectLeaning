@@ -150,6 +150,9 @@ public class RefectTest {
             MAnnotaion mannotion = msetName.getAnnotation(MAnnotaion.class);
             if (mannotion != null) {
                 msetName.invoke(people, mannotion.name());
+                System.out.println("method的注解"+people.getName());
+            }else{
+                System.out.println("method的注解为空");
             }
             /**
              * 第一个坐标代表有几个参数，第二个坐标代表一个参数有几个注解
